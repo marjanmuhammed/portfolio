@@ -1,0 +1,466 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+    font-family: 'Solway', serif;
+    
+}
+
+/* Body and container */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lists {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.links:hover {
+    color: red;
+}
+
+/* Title Section */
+.title {
+    margin: 10% 0;
+    text-align: center;
+}
+
+.title-h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#last-name {
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title-link {
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.title-link:hover {
+    background-color: green;
+}
+
+/* Image positioning */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.imagegroup {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.images:hover .imagegroup {
+    transform: scale(1.1);
+}
+/* General Styling for About Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 60px 0;  /* Add spacing on top and bottom */
+}
+
+/* Container for about section */
+.basic-1 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Row Styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add space between columns */
+}
+
+/* Column Styling */
+.col-lg-4 {
+    flex: 1; /* Allow columns to grow and shrink evenly */
+    margin-bottom: 30px; /* Add margin between columns for mobile */
+}
+
+/* Text-container Styling */
+.text-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for text containers */
+.text-container:hover {
+    transform: translateY(-10px); /* Lift the container on hover */
+}
+
+/* Heading Style */
+.text-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Subheading (e.g., job title, education) */
+.text-container h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+/* Paragraph Styling */
+.text-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Time or Date Styling */
+.time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Mobile Responsive: Stack columns vertically for small screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 15px; /* Reduce space between columns */
+    }
+}
+
+/* Services Section */
+#services {
+    padding: 60px 10%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.basic-2 .h2-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.basic-2 .p-heading {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.text-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.text-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fas,
+.far {
+    font-size: 40px;
+    color: #0b36a8;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+/* Contact Form */
+/* General Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], 
+input[type="email"], 
+input[type="subject"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="subject"]:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #002793;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Form Container */
+.card {
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    form {
+        padding: 20px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+    }
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 10%;
+}
+
+.basic-3 .h2-heading {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.basic-3 .p-heading {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Icon Styling */
+.icon-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon i {
+    font-size: 30px;
+    color: #333;
+}
+
+.icon:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
+.up-arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 30px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.up-arrow:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .title-h1 {
+        font-size: 35px;
+    }
+
+    .title-link {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .skill_container {
+        grid-template-columns: 1fr;
+    }
+
+    .basic-2 .text-box {
+        padding: 1.5rem;
+    }
+
+    .basic-3 .text-container {
+        text-align: center;
+    }
+
+    .images {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .imagegroup {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-links a {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
